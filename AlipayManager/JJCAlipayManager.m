@@ -56,7 +56,7 @@ DEF_SINGLETON
             }
             [[JJCAlipayResponseManager sharedInstance] setResponse:resultDic];
             NSLog(@"授权结果 authCode = %@",authCode?:@"");
-            return true;
+            
         }];
     }
     return false;

@@ -45,6 +45,7 @@
 		20A35B2820A979BE00C99247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A35B2720A979BE00C99247 /* main.m */; };
 		20A35B3120A97C6300C99247 /* JJCBaseThirdPlatformManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A35B3020A97C6300C99247 /* JJCBaseThirdPlatformManager.m */; };
 		20A35B3520A97EDB00C99247 /* JJCThirdPlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A35B3420A97EDB00C99247 /* JJCThirdPlatformModel.m */; };
+		20BD4E6F20C8FD4000719704 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BD4E6E20C8FD4000719704 /* CoreMotion.framework */; };
 		DC236DCF668C502A0A7B9F8D /* Pods_JJCThirdPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFECC20D05BD5CBD358CD56 /* Pods_JJCThirdPlatformKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		20A35B3020A97C6300C99247 /* JJCBaseThirdPlatformManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCBaseThirdPlatformManager.m; sourceTree = "<group>"; };
 		20A35B3320A97EDB00C99247 /* JJCThirdPlatformModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCThirdPlatformModel.h; sourceTree = "<group>"; };
 		20A35B3420A97EDB00C99247 /* JJCThirdPlatformModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCThirdPlatformModel.m; sourceTree = "<group>"; };
+		20BD4E6E20C8FD4000719704 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		3727F165370EA913A55DF9CB /* Pods-JJCThirdPlatformKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJCThirdPlatformKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJCThirdPlatformKit/Pods-JJCThirdPlatformKit.release.xcconfig"; sourceTree = "<group>"; };
 		7BFECC20D05BD5CBD358CD56 /* Pods_JJCThirdPlatformKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJCThirdPlatformKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C486E4C3554AD73919377BD5 /* Pods-JJCThirdPlatformKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJCThirdPlatformKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJCThirdPlatformKit/Pods-JJCThirdPlatformKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BD4E6F20C8FD4000719704 /* CoreMotion.framework in Frameworks */,
 				20A0CBDD20B53BDD0043B5AF /* TencentOpenAPI.framework in Frameworks */,
 				20A0CBDB20B5394B0043B5AF /* SystemConfiguration.framework in Frameworks */,
 				2021E74B20BC15F2009625F1 /* cmbkeyboard.framework in Frameworks */,
@@ -345,6 +348,7 @@
 		33959A2F90E3535A9D507A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20BD4E6E20C8FD4000719704 /* CoreMotion.framework */,
 				20A0CBDC20B53BDD0043B5AF /* TencentOpenAPI.framework */,
 				20A0CBDA20B5394A0043B5AF /* SystemConfiguration.framework */,
 				7BFECC20D05BD5CBD358CD56 /* Pods_JJCThirdPlatformKit.framework */,
@@ -672,6 +676,7 @@
 					"\"${PODS_ROOT}/Headers/Public/WeiboSDK\"",
 				);
 				INFOPLIST_FILE = JJCThirdPlatformKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -705,6 +710,7 @@
 					"\"${PODS_ROOT}/Headers/Public/WeiboSDK\"",
 				);
 				INFOPLIST_FILE = JJCThirdPlatformKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
