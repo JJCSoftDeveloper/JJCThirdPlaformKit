@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTThirdPlatformDefine.h"
-
+#import "JJCThirdPlatformDefine.h"
+#import "JJCThirdPlatformHandler.h"
 @protocol JJCThirdPlatformConfigure <NSObject>
 
 /**
@@ -47,11 +47,14 @@
        redirectURL:(NSString *)redirectURL
         URLSchemes:(NSString*)URLSchemes;
 
+
+
 - (NSString*)appIDWithPlaform:(JJCThirdPlatformType)platformType;
 - (NSString*)appKeyWithPlaform:(JJCThirdPlatformType)platformType;
 - (NSString*)appSecretWithPlaform:(JJCThirdPlatformType)platformType;
 - (NSString*)appRedirectURLWithPlaform:(JJCThirdPlatformType)platformType;
 - (NSString*)URLSchemesWithPlaform:(JJCThirdPlatformType)platformType;
+- (JJC_PaymentResultSettingHandler)ResultSettingHandlerWithPlaform:(JJCThirdPlatformType)platformType;
 
 - (NSString*)appIDWithPlaform:(JJCThirdPlatformType)platformType subType:(JJCThirdPlatformSubType)subType;
 - (NSString*)appKeyWithPlaform:(JJCThirdPlatformType)platformType subType:(JJCThirdPlatformSubType)subType;
@@ -59,6 +62,14 @@
 - (NSString*)appRedirectURLWithPlaform:(JJCThirdPlatformType)platformType subType:(JJCThirdPlatformSubType)subType;
 - (NSString*)URLSchemesWithPlaform:(JJCThirdPlatformType)platformType subType:(JJCThirdPlatformSubType)subType;
 
+- (JJC_PaymentResultSettingHandler)ResultSettingHandlerWithPlaform:(JJCThirdPlatformType)platformType subType:(JJCThirdPlatformSubType)subType;
+/**
+ 插件接入点-添加支付管理类的支付结果方式
+ 
+ @param settingHandler 自定义的支付结果获取设置，
+ @param platformType 平台类型 @see JJCThirdPlatformType 或者自定义第三方平台类型
+ */
+- (void)addCustomPayResultRequestSetting:(JJC_PaymentResultSettingHandler)settingHandler withPlatform:(NSInteger)platformType;
 /**
  插件接入点-添加登录或者是支付的管理类
  

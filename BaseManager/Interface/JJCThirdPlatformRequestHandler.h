@@ -6,10 +6,10 @@
 //  Copyright © 2018年 jjc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "PTThirdPlatformDefine.h"
+#import <UIKit/UIKit.h>
+#import "JJCThirdPlatformDefine.h"
 
-@class OrderModel, ThirdPlatformShareModel;
+@class JJCOrderModel, JJCThirdPlatformShareModel;
 
 @protocol JJCThirdPlatformRequestHandler <NSObject>
 
@@ -19,9 +19,9 @@
 + (BOOL)sendAuthInViewController:(UIViewController *)viewController;
 
 // 支付
-+ (BOOL)payWithOrder:(OrderModel*)order;
++ (BOOL)payWithOrder:(JJCOrderModel*)order;
 
 // 分享
-+ (BOOL)sendMessageWithModel:(ThirdPlatformShareModel*)model;
++ (BOOL)sendMessageWithModel:(JJCThirdPlatformShareModel*)model;
 
 @end

@@ -47,6 +47,24 @@
 @property (nonatomic, strong) NSData *imageData;
 @end
 
+
+#pragma mark - ......::::::: ThirdPlatformUserInfo :::::::......
+
+@interface JJCThirdPlatformUserInfo : NSObject
+@property (nonatomic, assign) JJCThirdPlatformType thirdPlatformType;
+@property (nonatomic, copy) NSString* username;
+@property (nonatomic, copy) NSString* userId;
+@property (nonatomic, copy) NSString* openid;///<微信openid
+@property (nonatomic, copy) NSString* email;
+@property (nonatomic, copy) NSString* head;
+@property (nonatomic, copy) NSString* age;
+@property (nonatomic, copy) NSString* gender;
+@property (nonatomic, strong) NSDate* expirationDate;
+@property (nonatomic, strong) NSString* tokenString;
+
+@end
+
+
 @interface JJCThirdPlatformShareModel : NSObject
 @property (nonatomic, assign) JJCShareType platform;
 @property (nonatomic, strong) JJCSharedObject* mediaObject;
@@ -68,21 +86,24 @@
 
 @end
 
-@interface OrderModel : NSObject
-/** 商家向财付通申请的商家id */
+@interface JJCOrderModel : NSObject
+/** 商户号id：  财付通商户号 微信商户号 */
 @property (nonatomic, retain) NSString *partnerid;
-/** 预支付订单 */
-@property (nonatomic, retain) NSString *prepayid;
+/** 订单id： 微信预支付订单id  CMB订单id*/
+@property (nonatomic, retain) NSString *prepayid;//
+
 /** 随机串，防重发 */
 @property (nonatomic, retain) NSString *noncestr;
 /** 时间戳，防重发 */
 @property (nonatomic, assign) UInt32 timestamp;
 /** 商家根据财付通文档填写的数据和签名 */
 @property (nonatomic, retain) NSString *package;
-/** 商家根据微信开放平台文档对数据做的签名 */
+/** 数据签名后的字符串： 支付宝签名后的字符串 CMB签名后的字符串 微信签名后的字符串 */
 @property (nonatomic, retain) NSString *sign;
-/** 订单号 */
-@property (nonatomic, strong) NSString* orderID;
+///** 订单号 */
+//@property (nonatomic, strong) NSString* orderID;
+
+
 @end
 
 // 第三方平台的配置信息
@@ -93,4 +114,7 @@
 @property (nonatomic, copy) NSString *redirectURL;
 @property (nonatomic, copy) NSString *URLSchemes;
 @end
+
+
+
 

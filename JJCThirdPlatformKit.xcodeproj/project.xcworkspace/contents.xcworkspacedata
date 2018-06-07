@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JJCThirdPlaformKit.xcodeproj">
+      location = "self:/Users/jjc/Desktop/Test/JJCThirdPlaformKit/JJCThirdPlatformKit.xcodeproj">
    </FileRef>
 </Workspace>

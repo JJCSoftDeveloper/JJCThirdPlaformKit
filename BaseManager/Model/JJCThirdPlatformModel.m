@@ -7,6 +7,9 @@
 //
 
 #import "JJCThirdPlatformModel.h"
+@implementation JJCThirdPlatformUserInfo
+
+@end
 
 @implementation JJCThirdPlatformShareModel
 
@@ -16,7 +19,7 @@
 
 @end
 
-@implementation OrderModel
+@implementation JJCOrderModel
 
 @end
 

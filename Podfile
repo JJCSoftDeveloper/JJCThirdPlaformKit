@@ -4,5 +4,7 @@ use_frameworks!
 
 target 'JJCThirdPlatformKit' do
 pod 'SDWebImage'
+pod 'WeiboSDK'
+pod 'WechatOpenSDK'
 end
 

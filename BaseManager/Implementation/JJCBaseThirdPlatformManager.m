@@ -66,13 +66,13 @@
  @param order 支付订单模型
  @param paymentBlock 支付结果回调
  */
-- (void)payWithPlateform:(JJCThirdPlatformType)payMethodType order:(OrderModel*)order paymentBlock:(JJC_PaymentResultBlock)paymentBlock {
+- (void)payWithPlateform:(JJCThirdPlatformType)payMethodType order:(JJCOrderModel*)order paymentBlock:(JJC_PaymentResultBlock)paymentBlock {
     // 空实现，子类实现该方法
 }
 
 #pragma mark - ......::::::: JJCThirdPlatformRespManagerDelegate :::::::......
 
-- (void)respManagerDidRecvAuthResponse:(ThirdPlatformUserInfo *)response platform:(JJCThirdPlatformType)platform {
+- (void)respManagerDidRecvAuthResponse:(JJCThirdPlatformUserInfo *)response platform:(JJCThirdPlatformType)platform {
     JJCThirdPlatformOnMainThreadAsync(^{
         !self.signInResultBlock ?: self.signInResultBlock(response, nil);
     });

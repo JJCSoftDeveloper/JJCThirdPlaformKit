@@ -1,5 +1,5 @@
 //
-//  JJCAlipayRequestManager.h
+//  JJCCMBRequestManager.h
 //  JJCThirdPlatformKit
 //
 //  Created by jjc on 2018/5/15.
@@ -7,6 +7,6 @@
 //
 
 #import "JJCBaseThirdPlatformRequestManager.h"
-@interface JJCAlipayRequestManager : JJCBaseThirdPlatformRequestManager
+@interface JJCCMBRequestManager : JJCBaseThirdPlatformRequestManager
 
 @end

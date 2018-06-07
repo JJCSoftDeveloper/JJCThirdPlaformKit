@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JJCThirdPlatformHandler.h"
+#import "JJCThirdPlatformConfigure.h"
+@interface JJCThirdPlatformManager : NSObject<JJCThirdPlatformHandler,JJCThirdPlatformConfigure>
 
-@interface JJCThirdPlatformManager : NSObject
 
+AS_SINGLETON
 @end

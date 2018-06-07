@@ -9,5 +9,5 @@
 #import "JJCBaseThirdPlatformManager.h"
 
 @interface JJCWeiboManager : JJCBaseThirdPlatformManager
-
+AS_SINGLETON
 @end

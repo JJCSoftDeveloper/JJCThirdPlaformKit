@@ -7,7 +7,7 @@
 //
 
 #import "JJCBaseThirdPlatformRequestManager.h"
-
+#import <WeiboSDK/WeiboSDK.h>
 @interface JJCWeiboRequestManager : JJCBaseThirdPlatformRequestManager
 
 @end

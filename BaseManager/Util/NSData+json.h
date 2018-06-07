@@ -1,5 +1,5 @@
 //
-//  NSData+jsonString.h
+//  NSData+json.h
 //  JJCThirdPlatformKit
 //
 //  Created by jjc on 2018/5/22.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (jsonString)
-
+@interface NSData (json)
+-(id)jsonObject;
 @end

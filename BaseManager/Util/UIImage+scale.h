@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (scale)
-
+-(UIImage*)imageWithNewScale:(float)scaleSize;
++(UIImage*)scaleImageWithOrgImage:(UIImage*)orgImage maxBytes:(NSInteger)maxBytes;
++(UIImage*)thumbImageWithOrgImage:(UIImage*)orgImage;
 @end

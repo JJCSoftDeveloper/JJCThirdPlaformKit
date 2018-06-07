@@ -8,11 +8,14 @@
 #import <UIKit/UIKit.h>
 #import "JJCThirdPlatformDefine.h"
 
-@class OrderModel, ThirdPlatformUserInfo, ThirdPlatformShareModel;
+@class JJCOrderModel, JJCThirdPlatformUserInfo, JJCThirdPlatformShareModel;
 
 typedef void(^JJC_PaymentResultBlock)(JJCThirdPlatformType payType, JJCPayResult result);
-typedef void(^JJC_SignInResultBlock)(ThirdPlatformUserInfo* userInfo, NSError* err);
+typedef void(^JJC_SignInResultBlock)(JJCThirdPlatformUserInfo* userInfo, NSError* err);
 typedef void(^JJC_ShareResultBlock)(JJCShareType shareType, JJCShareResult, NSError* err);
+
+typedef void (^JJC_PaymentResultRequestSettingBlock)(JJCPayResult result);
+typedef void (^JJC_PaymentResultSettingHandler)(JJC_PaymentResultRequestSettingBlock requestBlock);
 
 @protocol JJCThirdPlatformHandler <NSObject>
 
@@ -42,7 +45,7 @@ typedef void(^JJC_ShareResultBlock)(JJCShareType shareType, JJCShareResult, NSEr
 /**
  第三方分享
  */
-- (void)shareWithModel:(ThirdPlatformShareModel*)model;
+- (void)shareWithModel:(JJCThirdPlatformShareModel*)model;
 
 /**
  第三方支付
@@ -51,7 +54,7 @@ typedef void(^JJC_ShareResultBlock)(JJCShareType shareType, JJCShareResult, NSEr
  @param order 支付订单模型
  @param paymentBlock 支付结果回调
  */
-- (void)payWithPlateform:(JJCThirdPlatformType)payMethodType order:(OrderModel*)order paymentBlock:(JJC_PaymentResultBlock)paymentBlock;
+- (void)payWithPlateform:(JJCThirdPlatformType)payMethodType order:(JJCOrderModel*)order paymentBlock:(JJC_PaymentResultBlock)paymentBlock;
 
 // APP是否安装
 - (BOOL)isAppInstalled;

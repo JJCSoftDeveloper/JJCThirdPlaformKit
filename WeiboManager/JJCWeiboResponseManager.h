@@ -7,7 +7,7 @@
 //
 
 #import "JJCBaseThirdPlatformResponseManager.h"
-
-@interface JJCWeiboResponseManager : JJCBaseThirdPlatformResponseManager
-
+#import <WeiboSDK/WeiboSDK.h>
+@interface JJCWeiboResponseManager : JJCBaseThirdPlatformResponseManager<WeiboSDKDelegate>
+AS_SINGLETON
 @end

@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "JJCThirdPlatformDefine.h"
 
-@class ThirdPlatformUserInfo;
+@class JJCThirdPlatformUserInfo;
 
 @protocol JJCThirdPlatformResponseHandlerDelegate <NSObject>
 
 @optional
 
 - (void)respManagerDidRecvPayResponse:(JJCPayResult)result platform:(JJCThirdPlatformType)platform;
-- (void)respManagerDidRecvAuthResponse:(ThirdPlatformUserInfo *)response platform:(JJCThirdPlatformType)platform;
+- (void)respManagerDidRecvAuthResponse:(JJCThirdPlatformUserInfo *)response platform:(JJCThirdPlatformType)platform;
 - (void)respManagerDidRecvMessageResponse:(BOOL)result platform:(JJCShareType)platform;
 
 @end

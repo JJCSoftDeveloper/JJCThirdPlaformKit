@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NetworkRequestHelper : NSObject
-
++ (void)requestWithURLString:(NSString*_Nullable)urlString  completionHandler:(void (^_Nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
 @end
