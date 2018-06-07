@@ -683,9 +683,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/TencentManager/TencentOpenSDK",
-					"$(PROJECT_DIR)/AlipayManager/AlipaySDK",
-					"$(PROJECT_DIR)/CMBManager/CMBSDK",
+					"$(PROJECT_DIR)/../JJCThirdPlatformKit/TencentManager/TencentOpenSDK",
+					"$(PROJECT_DIR)/../JJCThirdPlatformKit/AlipayManager/AlipaySDK",
+					"$(PROJECT_DIR)/../JJCThirdPlatformKit/CMBManager/CMBSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,7 +700,6 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/WechatOpenSDK/WechatSDK1.8.2\"",
 					"\"${PODS_ROOT}/WeiboSDK/libWeiboSDK\"",
-					"$(PROJECT_DIR)/AlipayManager/AlipaySDK/AliSDKDemo",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JJC.JJCThirdPlatformKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,9 +716,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/TencentManager/TencentOpenSDK",
-					"$(PROJECT_DIR)/AlipayManager/AlipaySDK",
-					"$(PROJECT_DIR)/CMBManager/CMBSDK",
+					"$(PROJECT_DIR)/../JJCThirdPlatformKit/TencentManager/TencentOpenSDK",
+					"$(PROJECT_DIR)/../JJCThirdPlatformKit/AlipayManager/AlipaySDK",
+					"$(PROJECT_DIR)/../JJCThirdPlatformKit/CMBManager/CMBSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -734,7 +733,6 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/WechatOpenSDK/WechatSDK1.8.2\"",
 					"\"${PODS_ROOT}/WeiboSDK/libWeiboSDK\"",
-					"$(PROJECT_DIR)/AlipayManager/AlipaySDK/AliSDKDemo",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JJC.JJCThirdPlatformKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
